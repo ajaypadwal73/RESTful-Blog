@@ -5,6 +5,9 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 
 
+mongoose.connect("mongodb+srv://ajay:Ajaypadwal1!@cluster0-26wwl.mongodb.net/test?retryWrites=true&w=majority",{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
+
+
 // APP CONFIG
 mongoose.connect("mongodb://localhost:27017/restful_blog_app",{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
 
