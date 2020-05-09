@@ -9,7 +9,7 @@ mongoose.connect("mongodb+srv://ajay:Ajaypadwal1!@cluster0-26wwl.mongodb.net/tes
 
 
 // APP CONFIG
-mongoose.connect("mongodb://localhost:27017/restful_blog_app",{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
+//mongoose.connect("mongodb://localhost:27017/restful_blog_app",{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
 
 //ROUTES
 const blogRoutes = require("./routes/blog");
