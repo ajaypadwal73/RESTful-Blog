@@ -3,9 +3,12 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
+require("dotenv").config();
+require("./databaseConfig").connect();
 
 
-mongoose.connect(process.env.DATABASE || "mongodb://localhost:27017/restful_blog_app" ,{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
+
+// mongoose.connect(process.env.DATABASE ,{useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false});
 
 
 // APP CONFIG
